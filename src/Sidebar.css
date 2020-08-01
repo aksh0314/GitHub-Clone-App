@@ -1,0 +1,16 @@
+.sidebar {
+    flex: 0.275;
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar .sidebar-image {
+    position: relative;
+    bottom: 32px;
+}
+
+.sidebar .sidebar-image img{
+    width: 292px;
+    height: 292px;
+    border-radius: 50%;
+}
