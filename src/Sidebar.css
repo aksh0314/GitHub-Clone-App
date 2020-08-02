@@ -1,7 +1,9 @@
 .sidebar {
-    flex: 0.275;
+    flex: 0.25;
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    flex-direction: column;
+    padding: 0 16px;
 }
 
 .sidebar .sidebar-image {
@@ -14,3 +16,70 @@
     height: 292px;
     border-radius: 50%;
 }
+
+.sidebar-user-details {
+    padding: 16px 0;
+}
+
+.sidebar-user-details-names {
+    display: grid;
+}
+
+.sidebar-user-details-fullname{
+    font-size: 26px;
+    line-height: 1.25;
+    font-weight: 600;
+}
+
+.sidebar-user-details-userId {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    color: #666;
+}
+
+.sidebar-user-profile-bio{
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.sidebar-edit-profile-button {
+    width: 100%;
+    text-align: center;
+    padding: 5px 16px;
+    background-color: #fafbfc;
+    transition: background-color .2s cubic-bezier(.3,0,.5,1);
+    line-height: 20px;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 6px;
+    border-color: rgba(27,31,35,.15);
+    box-shadow: 0 1px 0 rgba(27,31,35,.04), inset 0 1px 0 hsla(0,0%,100%,.25);
+}
+
+.sidebar-edit-profile-button span {
+    color: #24292e;
+    font-size: 14px;
+    font-weight: 600 !important;
+}
+
+.sidebar-edit-profile-button:hover {
+    background-color: #edeff2;
+}
+
+.sidebar-followers a{
+    color: #586069!important;
+}
+
+.sidebar-followers a:hover{
+    color: #0366d6;
+}
+
+
+
+
+
+

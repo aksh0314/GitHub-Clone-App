@@ -12,7 +12,13 @@ export default function LowerNavbar() {
                 <div className="lower-nav-1"></div>
                 <ul className="lower-nav-2">
                     <li><NavLink activeClassName="active" exact to="/"><BookIcon size='small'/>Overview</NavLink></li>
-                    <li><NavLink activeClassName="active" to="Repositories"><RepoIcon size='small'/>Repositories</NavLink></li>
+                    <li>
+                        <NavLink activeClassName="active" to="Repositories">
+                            <RepoIcon size='small'/>
+                            Repositories
+                            <span className="lower-nav-counter">201</span>
+                        </NavLink>
+                    </li>
                 </ul>
             </div>
             <Switch>

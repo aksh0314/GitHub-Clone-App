@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Sidebar from './Sidebar';
+import Repo from './Repo';
 
 export default function Repositories() {
     return (
-        <div>
-            <h2>Welcome to Repositories Page</h2>
+        <div className="overview">
+            <Sidebar />
+            <Repo />
         </div>
     )
 }

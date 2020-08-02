@@ -15,11 +15,13 @@
 }
 
 .lower-nav-1 {
-    flex: 0.275;
+    flex: 0.25;
+    padding: 0 16px;
 }
 
 .lower-nav-2 {
-    flex: 0.725;
+    flex: 0.75;
+    padding: 0 16px;
 }
 
 .lower-nav ul {
@@ -63,4 +65,19 @@
 .lower-nav ul li a svg{
     color: lightslategray;
     margin: 5px;
+}
+
+.lower-nav-counter {
+    display: inline-block;
+    min-width: 20px;
+    padding: 0 6px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #24292e;
+    text-align: center;
+    background-color: rgba(209,213,218,.5);
+    border: 1px solid transparent;
+    border-radius: 2em;
+    margin-left: 5px;
 }
