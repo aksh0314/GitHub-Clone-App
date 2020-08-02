@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import RepoList from './RepoList'
+import RepoList from './RepoList';
+import './Repo.css'
 
 const BASE_URL = "https://api.github.com/users/shalabhsingh/repos"
 
@@ -18,7 +19,7 @@ export default function Repo() {
     return (
         <div className="repo">
         {repo.map(repoDetails => (
-            <RepoList repoDetails={repoDetails}/>
+            <RepoList key={repoDetails.id} repoDetails={repoDetails}/>
         ))}
         </div>
     )
