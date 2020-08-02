@@ -1,5 +1,87 @@
 .profile{
     flex: 0.75;
-    border: 1px solid black;
     padding: 0 16px;
+    margin-top: 24px;
 }
+
+.profile > p {
+    margin-bottom: 8px
+}
+
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -8px;
+}
+
+.profile-box {
+    display: flex;
+    flex: 1 1 40%;
+    height: auto;
+    border-radius: 6px;
+    padding: 0 8px;
+    margin-bottom: 16px;
+}
+
+.profile-box-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    padding: 16px;
+}
+
+.profile-box-content div:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.profile-box-title{
+    font-weight: 600!important;
+    font-size: 14px;
+ }
+
+ .profile-box-title svg {
+     color: #586069;
+ }
+
+ .profile-box-title a {
+    color: #0366d6 !important;  
+}
+
+ .profile-box-title a:hover {
+    text-decoration: underline !important;  
+}
+
+.profile-box-desc {
+    font-size: 12px!important;
+    color: #586069!important;
+}
+
+.profile-lang-color {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.profile-box-lower {
+    display: flex;
+    align-items: center;
+    font-size: 12px!important;
+    color: #586069!important;
+}
+
+.profile-box-lower span {
+    margin-right: 20px;
+}
+
+.profile-box-lower a {
+    color: #586069!important;
+}
+

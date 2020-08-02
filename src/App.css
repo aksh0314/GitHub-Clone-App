@@ -7,6 +7,11 @@ body {
   color: #24292e;
 }
 
+a {
+  text-decoration: none; 
+  color: #24292e; 
+}
+
 /* Header */
 .header {
   display: flex;
@@ -23,8 +28,12 @@ body {
   margin: 0 16px;
 }
 
-.header-lft img {
-  object-fit: contain;
+.header-brand-logo svg {
+  color: white;
+}
+
+.header-brand-logo:hover svg {
+  color: hsla(0,0%,100%,.7)
 }
 
 .header-navtxt {

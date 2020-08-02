@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import {BellIcon, PlusIcon} from '@primer/octicons-react'
+import {MarkGithubIcon, BellIcon, PlusIcon} from '@primer/octicons-react'
 
 export default function Header() {
 
     return (
         <div className="header">
             <div className="header-lft">
-                <img src="./img/GitHub-Mark-Light-32px.png" alt=""/>
+                <a href="" className="header-brand-logo"><MarkGithubIcon size={32} /></a>
                 <input type="text" name="search" id="search" placeholder="Search or jump to…"/>
                 {/* <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" className="mr-2 header-search-key-slash" /> */}
                 

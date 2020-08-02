@@ -1,7 +1,6 @@
 .sidebar {
     flex: 0.25;
     display: flex;
-    justify-content: start;
     flex-direction: column;
     padding: 0 16px;
 }
@@ -21,7 +20,7 @@
     padding: 16px 0;
 }
 
-.sidebar-user-details-names {
+.sidebar-user-details > h1{
     display: grid;
 }
 
@@ -58,6 +57,7 @@
     border-radius: 6px;
     border-color: rgba(27,31,35,.15);
     box-shadow: 0 1px 0 rgba(27,31,35,.04), inset 0 1px 0 hsla(0,0%,100%,.25);
+    margin-bottom: 16px!important;
 }
 
 .sidebar-edit-profile-button span {
@@ -70,12 +70,21 @@
     background-color: #edeff2;
 }
 
-.sidebar-followers a{
-    color: #586069!important;
+.sidebar-followers {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
 }
 
-.sidebar-followers a:hover{
+.sidebar-followers a{
+    color: #586069!important;
+    margin-left: 3px;
+    text-decoration: none;
+}
+
+.sidebar-followers a:hover span{
     color: #0366d6;
+    text-decoration: none;
 }
 
 
