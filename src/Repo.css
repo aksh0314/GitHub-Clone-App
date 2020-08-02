@@ -3,3 +3,66 @@
     padding: 0 16px;
     margin-top: 24px;
 }
+
+.repo-details {
+    display: flex;
+    flex-direction: column;
+    flex: 0.75;
+    justify-content: space-between;
+    padding: 24px 0;
+    border-bottom: 1px solid #e1e4e8;
+}
+
+.repo-box-title{
+    font-weight: 600!important;
+    font-size: 20px;
+ }
+
+ .repo-box-title svg {
+     color: #586069;
+ }
+
+ .repo-box-title a, .repo-box-forked a:hover {
+    color: #0366d6 !important;  
+}
+
+ .repo-box-title a:hover {
+    text-decoration: underline !important;  
+}
+
+.repo-box-desc {
+    font-size: 14px!important;
+    color: #586069!important;
+    margin-bottom: 15px;
+}
+
+.repo-lang-color {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.repo-box-lower {
+    display: flex;
+    align-items: center;
+    font-size: 12px!important;
+    color: #586069!important;
+}
+
+.repo-box-lower span {
+    margin-right: 20px;
+}
+
+.repo-box-lower a {
+    color: #586069!important;
+}
+
+.repo-box-forked {
+    font-size: 12px!important;
+    color: #586069!important;
+    margin: 8px 0;
+}

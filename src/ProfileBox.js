@@ -2,13 +2,6 @@ import React from 'react'
 import './Profile.css'
 import {RepoIcon, RepoForkedIcon, StarIcon} from '@primer/octicons-react';
 
-const langColor = {
-    "Python" : "#3572A5",
-    "Jupyter Notebook" : "#DA5B0B",
-    "CSS" : "#563d7c",
-    "Java" : "#b07219"
-}
-
 export default function ProfileBox({repo}) {
 
     return (
@@ -25,4 +18,11 @@ export default function ProfileBox({repo}) {
             </div>
         </div>
     )
+}
+
+const langColor = {
+    "Python" : "#3572A5",
+    "Jupyter Notebook" : "#DA5B0B",
+    "CSS" : "#563d7c",
+    "Java" : "#b07219"
 }
