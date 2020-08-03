@@ -16,7 +16,7 @@ export default function LowerNavbar() {
                         <NavLink activeClassName="active" to="Repositories">
                             <RepoIcon size='small'/>
                             Repositories
-                            <span className="lower-nav-counter">201</span>
+                            <span className="lower-nav-counter">6</span>
                         </NavLink>
                     </li>
                 </ul>

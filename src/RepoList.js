@@ -5,12 +5,13 @@ import {RepoForkedIcon, LawIcon, StarIcon} from '@primer/octicons-react';
 export default function RepoList({repoDetails}) {
 
     const date = new Date(repoDetails.updated_at);
-    const nDate = date.toString().slice(4, 15);
+    const options = { year: 'numeric', month: 'short', day: 'numeric' };
+    const nDate = date.toLocaleDateString(undefined, options);
 
     return (
         <div className="repo-details">
-                <div className="repo-box-title"><a href={repoDetails.html_url}>{repoDetails.name}</a></div>
-                <div className="repo-box-forked">Forked from <a href="https://github.com/shalabhsingh/shalabhsingh.github.io">barryclark/jekyll-now</a></div>
+            <div className="repo-box-title"><a href={repoDetails.html_url}>{repoDetails.name}</a></div>
+                {repoDetails.fork ? <div className="repo-box-forked">Forked from <a href="https://github.com/shalabhsingh/shalabhsingh.github.io">barryclark/jekyll-now</a></div> : ''}
                 <div className="repo-box-desc">{repoDetails.description}</div>
                 <div className="repo-box-lower">
                     <p className="repo-lang-color" style={{"backgroundColor": langColor[`${repoDetails.language}`]}}></p>
