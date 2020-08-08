@@ -13,8 +13,7 @@ export default function Dropdown({options, getSelection}) {
         <div className="form-group">
             <select value={val} onChange={handleChange} className="form-control" placeholder="Type">
                 {options.map((option, i) => {
-                    debugger
-                    console.log(option)
+                    {/* debugger */}
                     return <option value={option} key={i} >{option}</option>
                 })}
             </select>
