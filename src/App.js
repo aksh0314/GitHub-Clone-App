@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from './Header';
 import LowerNavbar from './LowerNavbar'
+import Footer from './Footer';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
     <div>
       <Header />
       <LowerNavbar />
+      <Footer />
     </div>
   );
 }

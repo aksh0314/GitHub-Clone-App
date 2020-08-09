@@ -4,8 +4,8 @@ import Dropdown from './Dropdown';
 import './Repo.css'
 // import { DatabaseIcon } from '@primer/octicons-react';
 
-const options1 = ["Type", "All", "Sources", "Forks", "Archived", "Mirror"]
-const options2 = ["Languages", "All", "Java", "CSS", "Python", "Jupyter Notebook"]
+const options1 = ["All", "Sources", "Forks", "Archived", "Mirror"]
+const options2 = ["All", "Java", "CSS", "Python", "Jupyter Notebook"]
 
 export default function Repo() {
 
@@ -32,18 +32,15 @@ export default function Repo() {
     const checkVal = (data, sel1, sel2) => {
         let opt = {
             "All": "has_projects",
-            "Type": "has_projects",
             "Sources": "has_issues",
             "Forks": "fork", 
             "Archived": "archived", 
             "Mirror": "mirror_url"
         }
-        console.log(data[opt[sel1]])
-        console.log(data["language"].toLowerCase() == sel2)
 
-        if ((sel1 == "" || sel1 == "All" || sel1 == "Type") && (sel2 == "" || sel2 == "all" || sel2 == "languages")) {
+        if ((sel1 == "" || sel1 == "All") && (sel2 == "" || sel2 == "all")) {
             return true
-        } else if (sel1 != "" && data[opt[sel1]] && (sel2 == "" || sel2 == "all" || sel2 == "languages")) {
+        } else if (sel1 != "" && data[opt[sel1]] && (sel2 == "" || sel2 == "all")) {
             return true
         } else if (sel2 != "" && data["language"].toLowerCase() == sel2 && sel1 == "") {
             return true
@@ -57,8 +54,8 @@ export default function Repo() {
         <div className="repo">
             <div className="repo-filter">
                 <input type="search" id="search-repo" value={txt} onChange={(e) => onChange(e.target.value)} className="repo-filter-search" placeholder="Find a repository"/>
-                <Dropdown options={options1} getSelection={(q) => setSelection1(q)}/>
-                <Dropdown options={options2} getSelection={(q) => setSelection2(q.toLowerCase())}/>
+                <Dropdown options={options1} optType={"Type"} getSelection={(q) => setSelection1(q)}/>
+                <Dropdown options={options2} optType={"Languages"} getSelection={(q) => setSelection2(q.toLowerCase())}/>
             </div>
             {
                 repo.filter((data)=>{

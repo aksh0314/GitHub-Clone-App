@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Repo.css'
 
-export default function Dropdown({options, getSelection}) {
+export default function Dropdown({options, optType, getSelection}) {
     const [val, setVal] = useState('Select an Option')
     
     const handleChange = (e) => {
@@ -11,7 +11,10 @@ export default function Dropdown({options, getSelection}) {
 
     return (
         <div className="form-group">
-            <select value={val} onChange={handleChange} className="form-control" placeholder="Type">
+            <select value={val} onChange={handleChange} className="form-control">
+            <option value="" selected> 
+                {optType}
+            </option>
                 {options.map((option, i) => {
                     {/* debugger */}
                     return <option value={option} key={i} >{option}</option>

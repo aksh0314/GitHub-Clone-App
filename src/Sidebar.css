@@ -60,6 +60,11 @@
     margin-bottom: 16px!important;
 }
 
+.sidebar-follow-button {
+    display: flex;
+    justify-content: space-between;
+}
+
 .sidebar-edit-profile-button span {
     color: #24292e;
     font-size: 14px;
@@ -70,21 +75,39 @@
     background-color: #edeff2;
 }
 
-.sidebar-followers {
+.sidebar-followers-details {
     display: flex;
     align-items: center;
     font-size: 14px;
+    margin-bottom: 16px!important;
 }
 
-.sidebar-followers a{
+.sidebar-followers-details a{
     color: #586069!important;
     margin-left: 3px;
     text-decoration: none;
 }
 
-.sidebar-followers a:hover span{
+.sidebar-followers-details a:hover span{
     color: #0366d6;
     text-decoration: none;
+}
+
+.sidebar-profile-li .octicon{
+    margin-left: -22px;
+    margin-top: 3px;
+    margin-right: 3px;
+    color: #6a737d;
+    text-align: center;
+}
+
+.sidebar-profile-li {
+    padding-left: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-top: 4px;
+    vertical-align: top;
 }
 
 
