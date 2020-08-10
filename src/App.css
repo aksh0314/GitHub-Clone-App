@@ -18,8 +18,8 @@ a {
   display: flex;
   justify-content: space-between;
   background-color: #24292e;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   color: #fff;
 }
 
@@ -28,6 +28,12 @@ a {
   align-items: center;
   margin: 0 16px;
 }
+
+.header-lft img {
+  position: relative;
+  right: 28px;
+}
+
 
 .header-brand-logo svg {
   color: white;
@@ -52,9 +58,10 @@ a {
 
 /* Search Bar in Header */
 #search {
-  margin: 0 16px;
-  min-width: 250px;
-  min-height: 18px;
+  font-family: inherit;
+  margin-left: 16px;
+  min-width: 272px;
+  min-height: 28px;
   border-radius: 6px;
   padding: 5px 12px;
   vertical-align: middle;

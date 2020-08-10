@@ -2,21 +2,25 @@
     margin: 0;
     padding: 0;
 }
-.lower-nav {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px 35px 0 35px;
+
+.lower-sticky-navbar {
     border-bottom: 1px solid lightgray;
     top: 0;
     position: -webkit-sticky;
     position: sticky;
+}
+
+.lower-nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 24px 34px 0 34px;
     background-color: white;
-    padding: 0 30px;
+    padding: 0 20px;
 }
 
 .lower-nav-1 {
     flex: 0.25;
-    padding: 0 16px;
+    /* padding: 0 16px; */
 }
 
 .lower-nav-2 {

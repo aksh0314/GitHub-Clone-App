@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import RepoList from './RepoList';
 import Dropdown from './Dropdown';
 import './Repo.css'
-// import { DatabaseIcon } from '@primer/octicons-react';
 
 const options1 = ["All", "Sources", "Forks", "Archived", "Mirror"]
 const options2 = ["All", "Java", "CSS", "Python", "Jupyter Notebook"]
@@ -13,8 +12,6 @@ export default function Repo() {
     const [txt, setTxt] = useState('')
     const [Selection1, setSelection1] = useState('')
     const [Selection2, setSelection2] = useState('')
-    // console.log(Selection1)
-    // console.log(Selection2)
 
 
     useEffect(() => {

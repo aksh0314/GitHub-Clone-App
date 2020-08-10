@@ -11,8 +11,8 @@
 }
 
 .sidebar .sidebar-image img{
-    width: 292px;
-    height: 292px;
+    width: 270px;
+    height: 270px;
     border-radius: 50%;
 }
 
@@ -92,6 +92,7 @@
     color: #586069!important;
     margin-left: 3px;
     text-decoration: none;
+    font-size: 14px;
 }
 
 .sidebar-followers-details a:hover span{
@@ -113,9 +114,14 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     padding-top: 4px;
+    font-size: 14px;
     vertical-align: top;
 }
 
+.txt-gray {
+    color: #24292e;
+    font-weight: 600;
+}
 
 
 

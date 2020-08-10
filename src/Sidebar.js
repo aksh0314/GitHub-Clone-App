@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Sidebar.css';
 import {KebabHorizontalIcon, PeopleIcon, StarIcon, OrganizationIcon, LocationIcon, MailIcon, LinkIcon} from '@primer/octicons-react';
-// import { Link } from 'react-router-dom';
 
 const BASE_URL = 'https://api.github.com/users/shalabhsingh';
 
@@ -44,15 +43,15 @@ export default function Sidebar() {
                     <div className="sidebar-followers-details">
                         <a href={userDetails.followers_url}>
                             <span><PeopleIcon size={16} /> </span>
-                            <span> {userDetails.followers} </span>
+                            <span className="txt-gray"> {userDetails.followers} </span>
                             <span> followers · </span>
                         </a>
                         <a href={userDetails.following_url}>
-                            <span> {userDetails.following} </span>
+                            <span className="txt-gray"> {userDetails.following} </span>
                             <span> following · </span>
                         </a>
                         <a href={userDetails.following_url}>
-                            <span> <StarIcon size={16} /> </span>
+                            <span className="txt-gray"> <StarIcon size={16} /> </span>
                             <span> {userDetails.following} </span>
                         </a>
                     </div>
