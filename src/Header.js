@@ -7,7 +7,7 @@ export default function Header() {
     return (
         <div className="header">
             <div className="header-lft">
-                <a href="" className="header-brand-logo"><MarkGithubIcon size={32} /></a>
+                <a href="https://github.com/" className="header-brand-logo"><MarkGithubIcon size={32} /></a>
                 <input type="text" name="search" id="search" placeholder="Search or jump to…"/>
                 {/* <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" className="mr-2 header-search-key-slash" /> */}
                 

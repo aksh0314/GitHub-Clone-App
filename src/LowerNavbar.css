@@ -5,8 +5,7 @@
 .lower-nav {
     display: flex;
     flex-wrap: wrap;
-    /* padding-left: 375px; */
-    margin-top: 20px;
+    margin: 20px 35px 0 35px;
     border-bottom: 1px solid lightgray;
     top: 0;
     position: -webkit-sticky;

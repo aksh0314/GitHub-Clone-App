@@ -13,7 +13,7 @@ export default function Footer() {
                 <li className="footer-ul-li"><a href="https://github.com/site/status">Status</a></li>
                 <li className="footer-ul-li"><a href="https://github.com/site/help">Help</a></li>
             </ul>
-            <a className="footer-github-icon" href="https://github.com/site/privacy"><MarkGithubIcon size={24} /></a>
+            <a className="footer-github-icon" href="https://github.com/"><MarkGithubIcon size={24} /></a>
             <ul className="footer-ul">
                 <li className="footer-ul-li"><a href="https://github.com/site/contact">Contact GitHub</a></li>
                 <li className="footer-ul-li"><a href="https://github.com/site/pricing">Pricing</a></li>

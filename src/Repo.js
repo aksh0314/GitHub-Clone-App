@@ -38,13 +38,13 @@ export default function Repo() {
             "Mirror": "mirror_url"
         }
 
-        if ((sel1 == "" || sel1 == "All") && (sel2 == "" || sel2 == "all")) {
+        if ((sel1 === "" || sel1 === "All" || sel1 === "Default") && (sel2 === "" || sel2 === "all" || sel2 === "Default")) {
             return true
-        } else if (sel1 != "" && data[opt[sel1]] && (sel2 == "" || sel2 == "all")) {
+        } else if (sel1 !== "" && data[opt[sel1]] && (sel2 === "" || sel2 === "all" || sel2 === "Default")) {
             return true
-        } else if (sel2 != "" && data["language"].toLowerCase() == sel2 && sel1 == "") {
+        } else if (sel2 !== "" && data["language"].toLowerCase() === sel2 && (sel1 === "" || sel1 === "All" || sel1 === "Default")) {
             return true
-        } else if (sel1 != "" && sel2 != "" && data[opt[sel1]] && data["language"].toLowerCase() == sel2){
+        } else if (sel1 !== "" && sel2 !== "" && data[opt[sel1]] && data["language"].toLowerCase() === sel2){
             return true
         }
         return false
@@ -59,9 +59,9 @@ export default function Repo() {
             </div>
             {
                 repo.filter((data)=>{
-                    if({txt} == "" && {Selection1} == "" && {Selection2} == "") {
+                    if({txt} === "" && {Selection1} === "" && {Selection2} === "") {
                         return data
-                    } else if (({txt} == "" || data.name.toLowerCase().includes(txt.toLowerCase())) && checkVal(data, Selection1, Selection2)) {
+                    } else if (({txt} === "" || data.name.toLowerCase().includes(txt.toLowerCase())) && checkVal(data, Selection1, Selection2)) {
                         return data
                     }
                 }).map(repoDetails => (

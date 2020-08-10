@@ -1,5 +1,6 @@
-import React from 'react'
-import './Profile.css'
+import React from 'react';
+import './Profile.css';
+import { Link } from 'react-router-dom';
 import {RepoIcon, RepoForkedIcon, StarIcon} from '@primer/octicons-react';
 
 export default function ProfileBox({repo}) {
@@ -12,8 +13,8 @@ export default function ProfileBox({repo}) {
                 <div className="profile-box-lower">
                     <p className="profile-lang-color" style={{"backgroundColor": langColor[`${repo.language}`]}}></p>
                     <span>{repo.language}</span>
-                    {repo.stargazers_count > 0 ? <a href="#"><StarIcon /><span> {repo.stargazers_count}</span></a> : ''}
-                    {repo.forks_count > 0 ? <a href="#"><RepoForkedIcon /><span> {repo.forks_count}</span></a> : ''}
+                    {repo.stargazers_count > 0 ? <Link to="/"><StarIcon /><span> {repo.stargazers_count}</span></Link> : ''}
+                    {repo.forks_count > 0 ? <Link to="/"><RepoForkedIcon /><span> {repo.forks_count}</span></Link> : ''}
                 </div>
             </div>
         </div>

@@ -6,11 +6,11 @@ li {
     display: flex;
     justify-content: space-between;
     position: relative!important;
-    margin-top: 30px !important;
     padding-top: 40px!important;
     padding-bottom: 48px!important;
     border-top: 1px solid #e1e4e8!important;
     font-size: 12px!important;
+    margin: 30px 35px 0 35px;
 }
 
 .footer-ul {

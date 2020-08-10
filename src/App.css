@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -17,8 +18,8 @@ a {
   display: flex;
   justify-content: space-between;
   background-color: #24292e;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   color: #fff;
 }
 

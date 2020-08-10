@@ -57,16 +57,23 @@
     border-radius: 6px;
     border-color: rgba(27,31,35,.15);
     box-shadow: 0 1px 0 rgba(27,31,35,.04), inset 0 1px 0 hsla(0,0%,100%,.25);
-    margin-bottom: 16px!important;
 }
 
 .sidebar-follow-button {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.sidebar-follow-button svg {
+    margin-left: 8px;
+    padding: 8px;
+    color: #6a737d;
 }
 
 .sidebar-edit-profile-button span {
-    color: #24292e;
+    color: #6a737d;
     font-size: 14px;
     font-weight: 600 !important;
 }
@@ -78,7 +85,6 @@
 .sidebar-followers-details {
     display: flex;
     align-items: center;
-    font-size: 14px;
     margin-bottom: 16px!important;
 }
 
